@@ -27,14 +27,11 @@ body {
 }
 
 .mainFooter {
-  position: absolute;
+  position: fixed;
   bottom: 0%;
   display: flex;
   justify-content: space-between;
-
-
   &__button {
-
   }
   &__contactBox {
     margin-right: 5%;
@@ -44,3 +41,23 @@ body {
   }
 }
 
+.mainTable {
+  height: 537px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainTable__typewriteBox {
+  &__baseline {
+
+  }
+  &__baseline--color {
+
+  }
+}
+
+.typewrite {
+
+}

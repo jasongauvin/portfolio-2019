@@ -67,9 +67,16 @@ body {
         padding-left: 10%; }
 
 .mainFooter {
-  position: absolute;
+  position: fixed;
   bottom: 0%;
   display: flex;
   justify-content: space-between; }
   .mainFooter__contactBox {
     margin-right: 5%; }
+
+.mainTable {
+  height: 537px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
