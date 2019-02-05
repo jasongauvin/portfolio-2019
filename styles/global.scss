@@ -1,0 +1,46 @@
+body {
+  background: black;
+  color: white;
+}
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+  &__titleBox {
+    width: 50%;
+    &__title {
+      margin-left: 5%;
+    }
+  }
+  &__nav {
+    width: 50%;
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__item {
+        padding-left: 10%;
+      }
+    }
+  }
+}
+
+.mainFooter {
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  justify-content: space-between;
+
+
+  &__button {
+
+  }
+  &__contactBox {
+    margin-right: 5%;
+    &__title {
+      
+    }
+  }
+}
+
