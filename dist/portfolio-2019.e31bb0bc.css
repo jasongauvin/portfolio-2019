@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url(https://fonts.googleapis.com/css?family=Lato);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,7 +21,8 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  text-decoration: none; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -46,8 +48,9 @@ table {
   border-spacing: 0; }
 
 body {
-  background: black;
-  color: white; }
+  background-color: #131313;
+  font-family: 'Lato', sans-serif;
+  color: #ffffff; }
 
 .mainHeader {
   position: fixed;
@@ -56,18 +59,21 @@ body {
   padding-top: 2%;
   width: 100%; }
   .mainHeader__titleBox {
-    width: 50%; }
+    width: 50%;
+    font-size: 3em;
+    font-weight: bold; }
     .mainHeader__titleBox__title {
-      margin-left: 5%; }
+      margin-left: 5%;
+      color: white; }
   .mainHeader__nav {
     width: 50%; }
     .mainHeader__nav__list {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center; }
       .mainHeader__nav__list__item {
-        padding-left: 10%;
-        width: 20%; }
+        font-size: 1.8em;
+        color: white; }
 
 .mainFooter {
   position: fixed;
@@ -75,7 +81,8 @@ body {
   margin-bottom: 2%;
   display: flex;
   width: 100%;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: baseline; }
   .mainFooter__button {
     padding-left: 5%; }
   .mainFooter__contactBox {
@@ -85,24 +92,49 @@ body {
   height: 537px;
   width: 100%;
   display: flex;
+  color: #ffffff;
   align-items: center;
   justify-content: center; }
+  .mainTable__typewriteBox__baseline {
+    font-size: 2.5em; }
+
+.typed {
+  color: grey;
+  font-weight: bold; }
+
+.typed-cursor {
+  opacity: 1;
+  animation: blink 0.7s infinite; }
 
 .mainTable__about {
   height: 537px;
   width: 100%;
   display: flex;
-  flex-direction: column; }
-  .mainTable__about__titleBox {
-    margin-bottom: 10%; }
+  flex-direction: column;
+  justify-content: center; }
+  margin-left
+.mainTable__about__titleBox {
+    margin-bottom: 40px; }
+    margin-left
+.mainTable__about__titleBox__title {
+      font-size: 1.5em;
+      font-weight: bold; }
 
 .mainTable__project {
   height: 537px;
   width: 100%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center; }
   .mainTable__project__titleBox {
-    margin-bottom: 20%; }
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 1.5em; }
+  .mainTable__project__itemsBox {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
 
 .mainTable__contact {
   height: 537px;
@@ -112,4 +144,7 @@ body {
   justify-content: center;
   flex-direction: column; }
   .mainTable__contact__titleBox {
-    margin-bottom: 20%; }
+    margin-bottom: 40px; }
+    .mainTable__contact__titleBox__title {
+      font-size: 1.5em;
+      font-weight: bold; }
